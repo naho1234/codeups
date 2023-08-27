@@ -1,0 +1,9 @@
+@use "global" as *;
+.card-list02 {
+  display: grid;
+  place-items: center;
+  gap: rem(40);
+  @include mq("md") {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

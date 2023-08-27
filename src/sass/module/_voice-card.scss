@@ -1,0 +1,80 @@
+@use "global" as *;
+.voice-card {
+  background-color: $color-white;
+  padding: rem(15) rem(16) rem(24);
+  box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.25);
+  max-width: rem(345);
+  width: 100%;
+  @include mq("md") {
+    max-width: rem(520);
+  }
+}
+.voice-card__top {
+  display: flex;
+  align-items: end;
+}
+.voice-card__info {
+  padding-bottom: rem(4);
+  border-bottom: 1px solid $color-blue;
+}
+.voice-card__wrap {
+  @include mq("md") {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+  }
+}
+.voice-card__age {
+  color: $color-green;
+  font-size: rem(12);
+  font-weight: $regular;
+}
+.voice-card__category {
+  padding: rem(4) rem(12);
+  border: 1px solid $color-blue;
+  color: $color-blue;
+  font-size: rem(12);
+  font-weight: $regular;
+  display: inline-block;
+  @include mq("md") {
+    line-height: 1.83333;
+    padding: rem(6) rem(16);
+  }
+}
+.voice-card__title {
+  font-size: rem(16);
+  font-weight: $medium;
+  color: $color-green;
+  margin-top: rem(4);
+  @include mq("md") {
+    font-size: rem(24);
+    margin-top: rem(8);
+  }
+}
+.voice-card__img {
+  aspect-ratio: 151 / 117;
+  max-width: rem(151);
+  width: 100%;
+  height: auto;
+  margin-left: rem(13);
+  @include mq("md") {
+    max-width: rem(180);
+    aspect-ratio: 180 / 140;
+    margin-left: rem(16);
+  }
+}
+.voice-card__img img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+.voice-card__text {
+  font-size: rem(16);
+  font-weight: $regular;
+  margin-top: rem(16);
+  color: $color-black;
+  @include mq("md") {
+    margin-top: rem(40);
+  }
+}

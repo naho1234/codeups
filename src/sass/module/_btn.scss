@@ -1,0 +1,75 @@
+@use "global" as *;
+.view-more__arrow {
+  cursor: pointer;
+}
+.view-more__arrow a {
+  display: inline-block;
+  font-family: $second-font-family;
+  font-weight: $regular;
+  font-size: rem(14);
+  position: relative;
+  padding: rem(16) rem(88) rem(16) rem(40);
+  background-color: $color-blue;
+  color: $color-white;
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.3s cubic-bezier(0.45, 0, 0.55, 1);
+  box-shadow: 4px 4px 0 0 #fff, 4px 4px 0 1px $color-blue;
+}
+.view-more__arrow a::first-letter {
+  text-transform: uppercase;
+}
+.view-more__arrow a::before,
+.view-more__arrow a::after {
+  content: "";
+  position: absolute;
+}
+.view-more__arrow a::before {
+  width: 100%;
+  height: 100%;
+  border: 1px solid $color-blue;
+  top: 0;
+  left: 0;
+}
+.view-more__arrow a::after {
+  background-color: $color-white;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scale(0, 1);
+  transform-origin: left top;
+  transition: 0.2s cubic-bezier(0.45, 0, 0.55, 1);
+  z-index: -2;
+}
+.view-more__arrow a:hover {
+  color: $color-blue;
+}
+.view-more__arrow a:hover:after {
+  transform: scale(1, 1);
+}
+.view-more__arrow a:hover span,
+.view-more__arrow a:hover span::after {
+  background-color: $color-blue;
+}
+.view-more__arrow span,
+.view-more__arrow span::after {
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: $color-white;
+}
+.view-more__arrow span {
+  width: rem(40);
+  height: rem(1);
+  right: rem(36);
+  top: 50%;
+  transform: translateY(-50%);
+}
+.view-more__arrow span::after {
+  width: rem(6);
+  height: rem(1);
+  right: 0;
+  bottom: rem(2);
+  transform: rotate(35deg);
+}
