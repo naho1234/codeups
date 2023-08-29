@@ -1,6 +1,7 @@
 @use "global" as *;
 .view-more__arrow {
   cursor: pointer;
+	text-align: center;
 }
 .view-more__arrow a {
   display: inline-block;
