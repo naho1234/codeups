@@ -2,7 +2,7 @@
 .card-list{
 	display: grid;
 	place-items: center;
-	gap: rem(40);
+	gap: rem(39);
 	@include mq('md') {
 		grid-template-columns: repeat(3,1fr);
 	}

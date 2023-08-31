@@ -1,0 +1,142 @@
+@use "global" as *;
+.footer {
+  background-color: $color-blue;
+  padding-top: rem(48);
+  padding-bottom: rem(56);
+  @include mq("md") {
+    padding-top: rem(80);
+    padding-bottom: rem(80);
+  }
+}
+.footer__inner.inner {
+  max-width: rem(480);
+  @include mq("md") {
+    max-width: rem(1080);
+  }
+}
+.footer__wrap {
+  @include mq("md") {
+    display: flex;
+    align-items: end;
+  }
+}
+.footer__logo {
+  max-width: rem(120);
+  width: 100%;
+  height: auto;
+  aspect-ratio: 120/45;
+  @include mq("md") {
+    max-width: rem(200);
+    aspect-ratio: 200/75;
+  }
+}
+.footer__logo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+.footer__sns {
+  margin-top: rem(16);
+  display: flex;
+  align-items: center;
+  @include mq("md") {
+    margin-top: 0;
+    margin-left: rem(40);
+  }
+}
+.footer__sns-item {
+  max-width: rem(24);
+  width: 100%;
+  height: auto;
+  aspect-ratio: 24 / 24;
+  @include mq("md") {
+    max-width: rem(32);
+  }
+}
+.footer__sns-item img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+.footer__sns-item + .footer__sns-item {
+  margin-left: rem(16);
+}
+.footer__items {
+  height: rem(476);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: rem(30);
+  @include mq("md") {
+    height: rem(234);
+  }
+}
+.footer__item {
+  padding-left: rem(24);
+  @include mq("md") {
+		width: max(rem(178),19vw);
+  }
+}
+.footer__item:not(:nth-child(1)):not(:nth-child(5)) {
+  margin-top: rem(16);
+  @include mq("md") {
+    margin-top: 0;
+  }
+}
+.footer__items .footer__item:nth-child(even) {
+  @include mq("md") {
+    margin-top: 8px;
+  }
+}
+.footer__items .footer__item:nth-child(9) {
+  @include mq("md") {
+    margin-top: 8px;
+  }
+}
+.footer__item a,
+.footer__item span {
+  width: 100%;
+  display: block;
+  padding-top: rem(12);
+  padding-bottom: rem(12);
+  text-align: left;
+  color: $color-white;
+  font-size: rem(16);
+  line-height: 1.125;
+}
+.footer__item a {
+  font-weight: $bold;
+  position: relative;
+}
+.footer__item a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: rem(18);
+  height: rem(18);
+  left: rem(-23);
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url(../images/common/drawer-icon.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.footer__item span {
+  font-weight: $regular;
+}
+.footer__copy {
+  margin-top: rem(25);
+  color: $color-white;
+  font-size: rem(12);
+  font-weight: $regular;
+  text-align: center;
+	letter-spacing: 0.11em;
+  @include mq("md") {
+    font-size: rem(14);
+    line-height: 1.2857;
+    margin-top: rem(80);
+  }
+}

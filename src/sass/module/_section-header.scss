@@ -40,10 +40,19 @@
 }
 .section-header__title--big {
   font-size: rem(80);
-  line-height: 1;
+  line-height: 0.8;
+	margin-top: rem(40);
+	@include mq('md') {
+	 margin-top: 0;
+	}
 }
 .section-header__subtitle {
 	color: $color-blue;
 	font-size: rem(12);
 	font-weight: $regular;
+}
+.section-header__subtitle--white{
+	@include mq('md') {
+		color: $color-white;
+	}
 }
