@@ -28,8 +28,8 @@
 	height: 100vh;
 }
 .sp-nav__items {
-  padding: rem(104) rem(37) rem(111) rem(8);
-  height: rem(667);
+  padding: rem(92) rem(37) rem(111) rem(8);
+  height: rem(680);
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -41,7 +41,7 @@
   padding-left: rem(29);
 }
 .sp-nav__item:not(:nth-child(1)):not(:nth-child(5)){
-	margin-top: rem(8);
+	margin-top: rem(16);
 }
 .sp-nav__item a,
 .sp-nav__item span {

@@ -2,7 +2,7 @@
 .voice {
   padding: rem(80) 0;
   @include mq("md") {
-    padding: rem(140) 0;
+    padding: rem(140) 0 rem(142);
   }
 }
 .voice__items::before,
@@ -19,8 +19,8 @@
   @include mq("md") {
     width: rem(301);
     height: rem(138);
-    top: rem(-216);
-    right: min(78%, 68vw);
+    top: rem(-213);
+    right: min(80%, 68vw);
     background-image: url(../images/common/voice-fish.png);
   }
 }
@@ -28,8 +28,8 @@
   @include mq("md") {
     width: rem(71);
     height: rem(162);
-    bottom: rem(-195);
-    left: min(93%, 87vw);
+    bottom: rem(-204);
+    left: min(93.5%, 87vw);
     background-image: url(../images/common/voice-seahorse.png);
   }
 }

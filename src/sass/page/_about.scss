@@ -13,7 +13,7 @@
     width: rem(194);
     height: rem(181);
     left: min(78vw, 91%);
-    bottom: rem(-138);
+    bottom: rem(-145);
     background-image: url(../images/common/about-bg.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -68,10 +68,9 @@
   @include mq("md") {
     margin-top: 0;
     position: absolute;
-    top: rem(200);
+    top: rem(202);
     left: rem(200);
     display: flex;
-    align-items: center;
   }
 }
 .about__title {
@@ -109,6 +108,6 @@
 .about__btn {
   margin-top: rem(51);
   @include mq("md") {
-    margin-top: rem(40);
+    margin-top: rem(38);
   }
 }

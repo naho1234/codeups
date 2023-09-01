@@ -3,7 +3,7 @@
   padding: rem(80) 0;
   background-color: #ddf0f1;
   @include mq("md") {
-    padding: rem(100) 0;
+    padding: rem(100) 0 rem(103);
   }
 }
 
@@ -17,7 +17,7 @@
     max-width: rem(1080);
     display: flex;
     flex-direction: row-reverse;
-    gap: rem(93);
+    gap: rem(102);
   }
 }
 .price__wrap::after {
@@ -71,6 +71,9 @@
   font-weight: $bold;
   padding-bottom: rem(4);
   border-bottom: 1px solid $color-blue;
+	@include mq('md') {
+	 padding-bottom: rem(3);
+	}
 }
 .price__list {
   margin-top: rem(8);

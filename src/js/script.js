@@ -50,7 +50,7 @@ window.addEventListener("load", function () {
         type: "slide",
         arrows: true,
         pagination: false,
-        autoplay: true,
+        // autoplay: true,
         rewind: true,
         start: 0,
         drag: true,
@@ -90,14 +90,28 @@ window.addEventListener("load", function () {
 });
 
 jQuery(function ($) {
-  // ハンバーガーメニュー
-  $(".js-hamburger").click(function () {
-    $(this).toggleClass("is-open");
-    $(".js-drawer-menu,.js-drawer-menu a,body").toggleClass("is-open");
-  });
-  $(".js-drawer-menu a").click(function () {
-    $(".js-hamburger,.js-drawer-menu,body").removeClass("is-open");
-  });
+// ハンバーガーメニュー
+$(".js-hamburger").click(function () {
+  $(this).toggleClass("is-open");
+  $(".js-drawer-menu,.js-drawer-menu a,body").toggleClass("is-open");
+
+  // メニューが開いたときに背景を固定
+  if ($(this).hasClass("is-open")) {
+    $('body').addClass("no-scroll");
+  } else {
+    $('body').removeClass("no-scroll");
+  }
+});
+
+$(".js-drawer-menu a").click(function () {
+  $(".js-hamburger,.js-drawer-menu,body").removeClass("is-open");
+
+  // メニューが閉じたときに背景の固定を解除
+  if (!$(".js-hamburger").hasClass("is-open")) {
+    $('body').removeClass("no-scroll");
+  }
+});
+
 
   // ページ内スクロール
   // ヘッダーの高さ取得

@@ -67,6 +67,9 @@
   right: rem(36);
   top: 50%;
   transform: translateY(-50%);
+	@include mq('md') {
+	 right: rem(40);
+	}
 }
 .view-more__arrow span::after {
   width: rem(6);

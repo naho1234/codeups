@@ -5,9 +5,6 @@
 .section-header__title {
   font-family: $second-font-family;
   font-weight: $regular;
-  @include mq("md") {
-    line-height: 1;
-  }
 }
 .section-header__title::first-letter {
   text-transform: uppercase;
@@ -35,24 +32,32 @@
   line-height: 1.25;
   @include mq("md") {
     font-size: rem(40);
-    line-height: 1;
+    line-height: 1.1;
   }
 }
 .section-header__title--big {
   font-size: rem(80);
   line-height: 0.8;
-	margin-top: rem(40);
+  margin-top: rem(40);
+  text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.25);
+  @include mq("md") {
+    text-shadow: none;
+    margin-top: 0;
+  }
+}
+.section-header__subtitle--big{
+	text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.25);
 	@include mq('md') {
-	 margin-top: 0;
+	 text-shadow: none;
 	}
 }
 .section-header__subtitle {
-	color: $color-blue;
-	font-size: rem(12);
-	font-weight: $regular;
+  color: $color-blue;
+  font-size: rem(12);
+  font-weight: $regular;
 }
-.section-header__subtitle--white{
-	@include mq('md') {
-		color: $color-white;
-	}
+.section-header__subtitle--white {
+  @include mq("md") {
+    color: $color-white;
+  }
 }
