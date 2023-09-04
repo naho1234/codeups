@@ -9,6 +9,10 @@
 .blog__inner.inner{
 	padding-left: rem(21);
 	padding-right: rem(21);
+	@include mq('md') {
+	 padding-left: 25px;
+	 padding-right: 25px;
+	}
 }
 .blog::before {
   @include mq("md") {

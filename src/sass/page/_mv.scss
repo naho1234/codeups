@@ -1,7 +1,6 @@
 @use "global" as *;
 .mv-img img,
 .mv-splide__slide img {
-  transition: all 2s ease-in-out;
   object-fit: cover;
   width: 100%;
 	height: 100%;

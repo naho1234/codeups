@@ -151,20 +151,19 @@ a {
 
 .about__contents {
 	margin: 1.75rem auto 0;
-	max-width: 21.5625rem;
 	position: relative;
 	width: 100%;
 }
 
 .about__img--left {
 	aspect-ratio: 128/194;
-	max-width: 8rem;
+	max-width: 37%;
 	width: 100%;
 }
 
 .about__img--right {
 	aspect-ratio: 281/186;
-	max-width: 17.5625rem;
+	max-width: 82%;
 	position: absolute;
 	right: 0;
 	top: 1.625rem;
@@ -237,21 +236,14 @@ a {
 }
 
 .campaign-splide {
+	height: 100%;
 	margin-top: 1.625rem;
-	max-height: 22.8125rem;
 	position: relative;
 	width: 100%;
 }
 
 .campaign-splide .campaign-track {
 	overflow: visible;
-}
-
-.campaign-list {
-	grid-gap: 1.5rem;
-	display: grid;
-	gap: 1.5rem;
-	grid-template-columns: repeat(4, 1fr);
 }
 
 .campaign-slide {
@@ -263,7 +255,9 @@ a {
 }
 
 .campaign__item {
-	width: 17.5rem;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
 }
 
 .campaign__img {
@@ -283,6 +277,7 @@ a {
 
 .campaign__body {
 	background-color: #fff;
+	margin-top: auto;
 	padding: 1.125rem 1rem 1.375rem;
 }
 
@@ -387,7 +382,6 @@ a {
 .contact__items {
 	background-color: #fff;
 	margin: auto;
-	max-width: 30rem;
 	position: relative;
 	text-align: center;
 	width: 100%;
@@ -533,7 +527,6 @@ a {
 
 .information__contents {
 	margin: 1.75rem auto 0;
-	max-width: 30rem;
 }
 
 .information__img {
@@ -616,7 +609,6 @@ a {
 	-o-object-fit: cover;
 	height: 100%;
 	object-fit: cover;
-	transition: all 2s ease-in-out;
 	width: 100%;
 }
 
@@ -761,7 +753,6 @@ a {
 
 .price__wrap {
 	margin: 1.75rem auto 0;
-	max-width: 30rem;
 	position: relative;
 	width: 100%;
 }
@@ -907,11 +898,9 @@ a {
 	font-weight: 400;
 }
 
-.no-scroll {
+body.is-active {
 	height: 100%;
 	overflow: hidden;
-	position: fixed;
-	width: 100%;
 }
 
 .splide__track,
@@ -979,7 +968,6 @@ a {
 	display: flex;
 	flex-direction: column;
 	height: 100%;
-	max-width: 30rem;
 	padding: 1rem 1rem 1.5rem;
 	width: 100%;
 }
@@ -1130,10 +1118,6 @@ a {
 	padding-top: 3rem;
 }
 
-.footer__inner.inner {
-	max-width: 30rem;
-}
-
 .footer__logo {
 	aspect-ratio: 120/45;
 	height: auto;
@@ -1190,8 +1174,8 @@ a {
 	margin-top: 1rem;
 }
 
-.footer__item a,
-.footer__item span {
+.footer__link,
+.footer__subLink {
 	color: #fff;
 	display: block;
 	font-size: 1rem;
@@ -1199,20 +1183,21 @@ a {
 	padding-bottom: 0.75rem;
 	padding-top: 0.75rem;
 	text-align: left;
+	transition: opacity 0.3s;
 	width: 100%;
 }
 
-.footer__item a {
+.footer__link {
 	font-weight: 700;
 	position: relative;
-	transition: opacity 0.3s;
 }
 
-.footer__item a:hover {
+.footer__link:hover,
+.footer__subLink:hover {
 	opacity: 0.7;
 }
 
-.footer__item a::before {
+.footer__link::before {
 	background-image: url(../images/common/drawer-icon.svg);
 	background-position: center;
 	background-repeat: no-repeat;
@@ -1227,7 +1212,7 @@ a {
 	width: 1.125rem;
 }
 
-.footer__item span {
+.footer__subLink {
 	font-weight: 400;
 }
 
@@ -1271,6 +1256,7 @@ a {
 .inner {
 	margin-left: auto;
 	margin-right: auto;
+	max-width: 37.5rem;
 	padding-left: 15px;
 	padding-right: 15px;
 	width: 100%;
@@ -1373,7 +1359,6 @@ a {
 	display: flex;
 	flex-direction: column;
 	height: 100%;
-	max-width: 30rem;
 	padding: 0.875rem 1rem 1.5rem;
 	transition: opacity 0.5s;
 	width: 100%;
@@ -1497,11 +1482,14 @@ html {
 }
 
 .about__content {
-	display: flex;
-	left: 12.5rem;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	left: min(12.5rem, 14vw);
 	margin-top: 0;
+	max-width: 52.5rem;
 	position: absolute;
 	top: 12.625rem;
+	width: 100%;
 }
 
 .about__title {
@@ -1511,10 +1499,8 @@ html {
 }
 
 .about__wrap {
-	margin-left: 2.5rem;
+	margin-left: 1.25rem;
 	margin-top: 0;
-	max-width: 25rem;
-	width: 100%;
 }
 
 .about__text {
@@ -1527,6 +1513,11 @@ html {
 
 .blog {
 	padding-top: 6.25rem;
+}
+
+.blog__inner.inner {
+	padding-left: 25px;
+	padding-right: 25px;
 }
 
 .blog::before {
@@ -1574,15 +1565,6 @@ html {
 
 .campaign-splide {
 	margin-top: 2.375rem;
-	max-height: 27.8125rem;
-}
-
-.campaign-list {
-	gap: 2.5rem;
-}
-
-.campaign__item {
-	width: 20.8125rem;
 }
 
 .campaign__img {
@@ -1648,7 +1630,7 @@ html {
 
 .contact__items::before {
 	height: 8.625rem;
-	left: min(84%, 69vw);
+	left: min(67vw, 84%);
 	right: auto;
 	top: -2.375rem;
 	width: 18.8125rem;
@@ -1892,10 +1874,6 @@ html {
 .footer {
 	padding-bottom: 5rem;
 	padding-top: 5rem;
-}
-
-.footer__inner.inner {
-	max-width: 70.625rem;
 }
 
 .footer__wrap {
