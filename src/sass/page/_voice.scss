@@ -1,8 +1,8 @@
 @use "global" as *;
 .voice {
-  padding: rem(80) 0;
+	margin-top: rem(83);
   @include mq("md") {
-    padding: rem(140) 0 rem(142);
+		margin-top: rem(140);
   }
 }
 .voice__items::before,

@@ -49,12 +49,14 @@ window.addEventListener("load", function () {
         rewind: true,
         start: 0,
         drag: true,
-        gap: 24,
-        fixedWidth: "280px",
+        gap: 40,
+        fixedWidth: "333px",
+        focus: 1,
+        //余白を増やすための記述
         breakpoints: {
-          768: {
-            gap: 40,
-            fixedWidth: "333px"
+          767: {
+            gap: 24,
+            fixedWidth: "280px"
           }
         }
       });

@@ -1,8 +1,10 @@
 @use "global" as *;
 .price {
-  padding: rem(80) 0;
+	margin-top: rem(80);
+  padding: rem(83) 0 rem(80);
   background-color: #ddf0f1;
   @include mq("md") {
+		margin-top: rem(142);
     padding: rem(100) 0 rem(103);
   }
 }
@@ -16,7 +18,7 @@
     max-width: rem(1080);
     display: flex;
     flex-direction: row-reverse;
-    gap: rem(102);
+    gap: rem(95);
   }
 }
 .price__wrap::after {
@@ -77,8 +79,11 @@
 .price__list {
   margin-top: rem(8);
   display: grid;
-  grid-template-columns: 1fr rem(50);
+  grid-template-columns: rem(253) 1fr;
   row-gap: rem(8);
+	@include mq('md') {
+		grid-template-columns: rem(300) 1fr;
+	}
 }
 .price__course,
 .price__money {

@@ -1,8 +1,8 @@
 @use "global" as *;
 .about {
-  padding-bottom: rem(70);
+  margin-top: rem(75);
   @include mq("md") {
-    padding-bottom: rem(195);
+    margin-top: rem(136);
   }
 }
 .about__contents::after {
@@ -12,7 +12,7 @@
     display: block;
     width: rem(194);
     height: rem(181);
-    left: min(78vw, 91%);
+    left: min(77vw, 91%);
     bottom: rem(-145);
     background-image: url(../images/common/about-bg.png);
     background-repeat: no-repeat;

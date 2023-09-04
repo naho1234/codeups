@@ -2,32 +2,33 @@
 .section-header {
   text-align: center;
 }
-.section-header__title {
+.section-header__subTitle {
   font-family: $second-font-family;
   font-weight: $regular;
+	display: block;
 }
-.section-header__title::first-letter {
+.section-header__subTitle::first-letter {
   text-transform: uppercase;
 }
-.section-header__title--green::first-letter {
+.section-header__subTitle--green::first-letter {
   color: $color-blue;
 }
-.section-header__title--green {
+.section-header__subTitle--green {
   color: $color-green;
 }
-.section-header__title--white::first-letter {
+.section-header__subTitle--white::first-letter {
   color: $color-blue;
   @include mq("md") {
     color: #ddf0f1;
   }
 }
-.section-header__title--white {
+.section-header__subTitle--white {
   color: $color-green;
   @include mq("md") {
     color: $color-white;
   }
 }
-.section-header__title--small {
+.section-header__subTitle--small {
   font-size: rem(32);
   line-height: 1.25;
   @include mq("md") {
@@ -35,7 +36,7 @@
     line-height: 1.1;
   }
 }
-.section-header__title--big {
+.section-header__subTitle--big {
   font-size: rem(80);
   line-height: 0.8;
   margin-top: rem(40);
@@ -45,18 +46,22 @@
     margin-top: 0;
   }
 }
-.section-header__subtitle--big{
+.section-header__title--big{
 	text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.25);
 	@include mq('md') {
 	 text-shadow: none;
 	}
 }
-.section-header__subtitle {
+.section-header__title {
   color: $color-blue;
   font-size: rem(12);
   font-weight: $regular;
+	margin-top: rem(4);
+	@include mq('md') {
+	 margin-top: rem(5);
+	}
 }
-.section-header__subtitle--white {
+.section-header__title--white {
   @include mq("md") {
     color: $color-white;
   }
