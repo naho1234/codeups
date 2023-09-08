@@ -32,17 +32,17 @@ window.addEventListener("load", function () {
         drag: false
       });
       var campaignSplide = new Splide(".campaign-splide", {
-        type: "slide",
+        type: "loop",
         arrows: true,
         pagination: false,
         autoplay: true,
-        rewind: true,
-        start: 0,
+        rewind: false,
+        // ここをfalseに変更
+
         drag: true,
         gap: 40,
         fixedWidth: "333px",
-        focus: 1,
-        //余白を増やすための記述
+        focus: "center",
         breakpoints: {
           767: {
             gap: 24,

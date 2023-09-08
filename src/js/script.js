@@ -37,22 +37,22 @@ window.addEventListener("load", function () {
         drag: false,
       });
       const campaignSplide = new Splide(".campaign-splide", {
-        type: "slide",
+        type: "loop",
         arrows: true,
         pagination: false,
         autoplay: true,
-        rewind: true,
-        start: 0,
+        rewind: false, // ここをfalseに変更
+
         drag: true,
-				gap: 40,
-				fixedWidth: "333px",
-				focus: 1, //余白を増やすための記述
-				breakpoints: {
-					767: {
-						gap: 24,
-						fixedWidth: "280px",
-					},
-				},
+        gap: 40,
+        fixedWidth: "333px",
+        focus: "center",
+        breakpoints: {
+          767: {
+            gap: 24,
+            fixedWidth: "280px",
+          },
+        },
       });
       mvSplide.mount();
       campaignSplide.mount();
