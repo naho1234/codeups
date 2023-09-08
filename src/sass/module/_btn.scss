@@ -3,7 +3,7 @@
   cursor: pointer;
 	text-align: center;
 }
-.view-more__arrow a {
+.button {
   display: inline-block;
   font-family: $second-font-family;
   font-weight: $regular;
@@ -16,15 +16,15 @@
   transition: 0.3s cubic-bezier(0.45, 0, 0.55, 1);
 	border: 1px solid $color-blue;
 }
-.view-more__arrow a::first-letter {
+.button::first-letter {
   text-transform: uppercase;
 }
-.view-more__arrow a::before,
-.view-more__arrow a::after {
+.button::before,
+.button::after {
   content: "";
   position: absolute;
 }
-.view-more__arrow a::before {
+.button::before {
 	border: 1px solid $color-blue;
 	height: 100%;
 	left: rem(4);
@@ -32,7 +32,7 @@
 	width: 100%;
 	z-index: -3;
 }
-.view-more__arrow a::after {
+.button::after {
   background-color: $color-white;
   top: 0;
   left: 0;
@@ -43,24 +43,24 @@
   transition: 0.2s cubic-bezier(0.45, 0, 0.55, 1);
   z-index: -2;
 }
-.view-more__arrow a:hover {
+.button:hover {
   color: $color-blue;
 }
-.view-more__arrow a:hover:after {
+.button:hover:after {
   transform: scale(1, 1);
 }
-.view-more__arrow a:hover span,
-.view-more__arrow a:hover span::after {
+.button:hover span,
+.button:hover span::after {
   background-color: $color-blue;
 }
-.view-more__arrow span,
-.view-more__arrow span::after {
+.button span,
+.button span::after {
   content: "";
   position: absolute;
   display: block;
   background-color: $color-white;
 }
-.view-more__arrow span {
+.button span {
   width: rem(40);
   height: rem(1);
   right: rem(36);
@@ -70,7 +70,7 @@
 	 right: rem(40);
 	}
 }
-.view-more__arrow span::after {
+.button span::after {
   width: rem(6);
   height: rem(1);
   right: 0;

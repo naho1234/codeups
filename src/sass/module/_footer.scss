@@ -1,13 +1,17 @@
 @use "global" as *;
 .footer {
   background-color: $color-blue;
-  margin-top: rem(100);
   padding-top: rem(48);
   padding-bottom: rem(56);
   @include mq("md") {
-    margin-top: rem(160);
     padding-top: rem(80);
     padding-bottom: rem(80);
+  }
+}
+.footer__layout {
+  margin-top: rem(100);
+  @include mq("md") {
+    margin-top: rem(160);
   }
 }
 .footer__wrap {
@@ -66,14 +70,14 @@
   margin-top: rem(30);
   @include mq("md") {
     height: rem(234);
-		margin-top: rem(10);
+    margin-top: rem(10);
   }
 }
 .footer__item {
   padding-left: rem(24);
   @include mq("md") {
-		width: max(rem(178),18vw);
-		padding-left: rem(25);
+    width: max(rem(178), 18vw);
+    padding-left: rem(25);
   }
 }
 .footer__item:not(:nth-child(1)):not(:nth-child(5)) {
@@ -102,15 +106,15 @@
   color: $color-white;
   font-size: rem(16);
   line-height: 1.125;
-	transition: opacity 0.3s;
+  transition: opacity 0.3s;
 }
 .footer__link {
-	position: relative;
+  position: relative;
   font-weight: $bold;
 }
 .footer__link:hover,
-.footer__subLink:hover{
-	opacity: 0.7;
+.footer__subLink:hover {
+  opacity: 0.7;
 }
 .footer__link::before {
   content: "";
@@ -130,21 +134,20 @@
   font-weight: $regular;
 }
 .footer__copy {
-	margin-top: rem(25);
-	text-align: center;
-	@include mq('md') {
-		margin-top: rem(60);
-	}
+  margin-top: rem(25);
+  text-align: center;
+  @include mq("md") {
+    margin-top: rem(60);
+  }
 }
-.footer__copy small{
-	color: $color-white;
-	font-size: rem(12);
-	font-weight: $regular;
-	letter-spacing: 0.03em;
-	@include mq("md") {
-		font-size: rem(14);
-		line-height: 1.2857;
-		letter-spacing: 0.04em;
-	}
-
+.footer__copy small {
+  color: $color-white;
+  font-size: rem(12);
+  font-weight: $regular;
+  letter-spacing: 0.03em;
+  @include mq("md") {
+    font-size: rem(14);
+    line-height: 1.2857;
+    letter-spacing: 0.04em;
+  }
 }

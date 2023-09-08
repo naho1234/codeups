@@ -1,5 +1,5 @@
 @use "global" as *;
-.about {
+.about__layout {
   margin-top: rem(75);
   @include mq("md") {
     margin-top: rem(136);
@@ -13,7 +13,7 @@
     width: rem(194);
     height: rem(181);
     left: min(77vw, 91%);
-    bottom: rem(-145);
+    bottom: rem(-92);
     background-image: url(../images/common/about-bg.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -21,11 +21,11 @@
   }
 }
 .about__contents {
-  margin: rem(28) auto 0;
+  margin: rem(53) auto 0;
   width: 100%;
   position: relative;
   @include mq("md") {
-    margin-top: rem(40);
+    margin-top: rem(120);
     max-width: rem(1080);
   }
 }
@@ -33,10 +33,14 @@
   max-width: 37%;
   width: 100%;
   aspect-ratio: 128/194;
+	position: absolute;
+	top: rem(-25);
+	left: 0;
+	z-index: 1;
   @include mq("md") {
     max-width: rem(400);
-    width: 100%;
     aspect-ratio: 400/606;
+		top: rem(-80);
   }
 }
 
@@ -44,15 +48,11 @@
   max-width: 82%;
   width: 100%;
   aspect-ratio: 281/186;
-  z-index: -1;
-  position: absolute;
-  top: rem(26);
-  right: 0;
+  display: block;
+	margin-left: auto;
   @include mq("md") {
     max-width: rem(880);
-    width: 100%;
     aspect-ratio: 880/581;
-    top: rem(80);
   }
 }
 .about__img--left img,
@@ -63,16 +63,17 @@
   object-fit: cover;
 }
 .about__content {
-  margin-top: rem(58);
+  margin-top: rem(40);
   @include mq("md") {
     margin-top: 0;
     position: absolute;
-    top: rem(202);
+    top: rem(124);
     left: min(rem(200),14vw);
     display: grid;
 		grid-template-columns: repeat(2,1fr);
 		max-width: rem(840);
 		width: 100%;
+		z-index: 2;
   }
 }
 .about__title {

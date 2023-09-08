@@ -14,18 +14,18 @@
 	opacity: 0;
 	overflow: hidden;
   transition: opacity ease 0.3s, overflow ease 0.3s, height ease 0.3s;
-  overflow-y: scroll;
   //スクロールバーを消す
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
 .sp-nav::-webkit-scrollbar {
-  display: none;
+	display: none;
 }
 .sp-nav.is-open {
 	opacity: 1;
 	overflow: visible;
 	height: 100vh;
+	overflow-y: scroll;
 }
 .sp-nav__items {
   padding: rem(92) rem(37) rem(111) rem(8);
@@ -75,7 +75,7 @@
 .sp-nav__item span {
   font-weight: $regular;
 }
-body.is-active{
+body.is-open{
 	height: 100%;
 	overflow: hidden;
 }

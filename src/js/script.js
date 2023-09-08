@@ -36,16 +36,6 @@ window.addEventListener("load", function () {
         pagination: false,
         drag: false,
       });
-
-      // Splideがマウントされたとき（初期化が完了したとき）にテキストをフェードイン
-      mvSplide.on("mounted", function () {
-        $(".mv-splide__slide.is-active .text, .mv-splide__slide.is-active .subText").delay(1000).fadeIn(400);
-      });
-
-      // Splideのイベントリスナー
-      mvSplide.on("active", (slide) => {
-        $(slide.slide).find(".text, .subText").hide().delay(1000).fadeIn(400);
-      });
       const campaignSplide = new Splide(".campaign-splide", {
         type: "slide",
         arrows: true,
@@ -67,7 +57,7 @@ window.addEventListener("load", function () {
       mvSplide.mount();
       campaignSplide.mount();
     });
-  }, 5000);
+  }, 2000);
 
   //要素の取得とスピードの設定
   let box = $(".js-color"),

@@ -1,14 +1,17 @@
 @use "global" as *;
 .price {
-	margin-top: rem(80);
   padding: rem(83) 0 rem(80);
   background-color: #ddf0f1;
   @include mq("md") {
-		margin-top: rem(142);
     padding: rem(100) 0 rem(103);
   }
 }
-
+.price__layout {
+  margin-top: rem(80);
+  @include mq("md") {
+    margin-top: rem(142);
+  }
+}
 .price__wrap {
   margin: rem(28) auto 0;
   width: 100%;
@@ -42,7 +45,7 @@
   width: 100%;
   height: auto;
   aspect-ratio: 345/227;
-	position: relative;
+  position: relative;
   @include mq("md") {
     max-width: rem(492);
     aspect-ratio: 492/746;
@@ -72,18 +75,18 @@
   font-weight: $bold;
   padding-bottom: rem(4);
   border-bottom: 1px solid $color-blue;
-	@include mq('md') {
-	 padding-bottom: rem(3);
-	}
+  @include mq("md") {
+    padding-bottom: rem(3);
+  }
 }
 .price__list {
   margin-top: rem(8);
   display: grid;
   grid-template-columns: rem(253) 1fr;
   row-gap: rem(8);
-	@include mq('md') {
-		grid-template-columns: rem(300) 1fr;
-	}
+  @include mq("md") {
+    grid-template-columns: rem(300) 1fr;
+  }
 }
 .price__course,
 .price__money {

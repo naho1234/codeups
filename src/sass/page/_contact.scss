@@ -1,5 +1,5 @@
 @use "global" as *;
-.contact {
+.contact__layout {
   margin-top: rem(80);
   @include mq("md") {
     margin-top: rem(140);
@@ -103,7 +103,7 @@
   margin-top: rem(4);
 }
 .contact__map {
-  max-width: rem(295);
+  max-width: 100%;
   width: 100%;
   height: auto;
   aspect-ratio: 295/160;
