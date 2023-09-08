@@ -40,13 +40,15 @@ window.addEventListener("load", function () {
         type: "loop",
         arrows: true,
         pagination: false,
+				perPage: 1,
+				perMove: 1,
         autoplay: true,
         rewind: false, // ここをfalseに変更
-
+        start: 0,
         drag: true,
         gap: 40,
         fixedWidth: "333px",
-        focus: "center",
+        focus: 0,
         breakpoints: {
           767: {
             gap: 24,
