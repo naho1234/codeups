@@ -11,6 +11,9 @@
     height: rem(90);
   }
 }
+.header.is-open {
+  background: $color-blue;
+}
 .header__inner {
   display: flex;
   align-items: center;
@@ -39,9 +42,9 @@
   display: block;
   object-fit: cover;
 }
-.header__logo a{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: inherit;
+.header__logo a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: inherit;
 }

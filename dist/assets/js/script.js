@@ -93,10 +93,10 @@ jQuery(function ($) {
   // ハンバーガーメニュー
   $(".js-hamburger").click(function () {
     $(this).toggleClass("is-open");
-    $(".js-drawer-menu,.js-drawer-menu a,body").toggleClass("is-open");
+    $(".js-drawer-menu,.js-drawer-menu a,body,.header").toggleClass("is-open");
   });
   $(".js-drawer-menu a").click(function () {
-    $(".js-hamburger,.js-drawer-menu,body").removeClass("is-open");
+    $(".js-hamburger,.js-drawer-menu,body,.header").removeClass("is-open");
   });
 
   // ページ内スクロール

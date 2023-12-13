@@ -106,6 +106,7 @@
 }
 .price__btn {
   margin-top: rem(40);
+	text-align: center;
   @include mq("md") {
     margin-top: rem(80);
   }

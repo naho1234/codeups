@@ -7,13 +7,11 @@
 .splide__arrows {
   display: none;
   @include mq("md") {
-    height: auto;
-    display: flex;
-    gap: rem(80);
     position: absolute;
-    top: rem(-63);
-    right: rem(180);
+    top: rem(-64);
+    right: min(13vw,rem(184));
     cursor: pointer;
+    display: block;
   }
   .splide__arrow--prev,
   .splide__arrow--next {

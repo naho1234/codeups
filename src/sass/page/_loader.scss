@@ -23,6 +23,7 @@
   color: $color-blue;
   font-weight: $regular;
   letter-spacing: 0.54em;
+	text-indent: 0.54em;//letter-spacingを使用していると中央寄せにならないのでこれを使用
   @include mq("md") {
 		font-size: rem(80);
 		line-height: 1.25;

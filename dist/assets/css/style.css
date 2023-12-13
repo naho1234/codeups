@@ -145,6 +145,10 @@ a {
 	transition: opacity 0.3s;
 }
 
+.about {
+	position: relative;
+}
+
 .about-layout {
 	margin-top: 4.6875rem;
 }
@@ -210,6 +214,7 @@ a {
 
 .about__btn {
 	margin-top: 3.1875rem;
+	text-align: center;
 }
 
 .blog {
@@ -229,6 +234,11 @@ a {
 
 .blog__btn {
 	margin-top: 2.5rem;
+	text-align: center;
+}
+
+.campaign {
+	overflow: hidden;
 }
 
 .campaign-layout {
@@ -304,6 +314,7 @@ a {
 	font-weight: 500;
 	margin-top: 0.25rem;
 	padding-bottom: 0.5rem;
+	word-break: break-word;
 }
 
 .campaign__all {
@@ -352,6 +363,7 @@ a {
 .campaign__btn {
 	margin-top: 1.875rem;
 	padding-bottom: 0.375rem;
+	text-align: center;
 }
 
 .card-list {
@@ -478,6 +490,7 @@ a {
 
 .contact__btn {
 	margin-top: 2.5rem;
+	text-align: center;
 }
 
 .hamburger {
@@ -578,6 +591,7 @@ a {
 
 .information__btn {
 	margin-top: 2.5625rem;
+	text-align: center;
 }
 
 .loader {
@@ -604,6 +618,7 @@ a {
 	font-size: 2.5rem;
 	font-weight: 400;
 	letter-spacing: 0.54em;
+	text-indent: 0.54em;
 	text-transform: uppercase;
 }
 
@@ -665,25 +680,17 @@ a {
 }
 
 .mv__title {
+	left: 50%;
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	transform: translate(-50%, -50%);
 	width: 100%;
 }
 
 .mv__title .text,
 .mv__title .subText {
 	color: #fff;
-	position: absolute;
-}
-
-.mv__title .text {
-	left: 59%;
-	top: 47%;
-	transform: translate(-59%, -47%);
-}
-
-.mv__title .subText {
-	left: 50%;
-	top: 54%;
-	transform: translate(-50%, -54%);
 }
 
 .pc-nav {
@@ -832,6 +839,7 @@ a {
 
 .price__btn {
 	margin-top: 2.5rem;
+	text-align: center;
 }
 
 .sp-nav {
@@ -839,6 +847,7 @@ a {
 	background-color: #408F95;
 	height: 0;
 	left: 0;
+	margin-top: 5rem;
 	opacity: 0;
 	overflow: hidden;
 	position: absolute;
@@ -866,7 +875,7 @@ a {
 	flex-direction: column;
 	flex-wrap: wrap;
 	height: 42.5rem;
-	padding: 5.75rem 2.3125rem 6.9375rem 0.5rem;
+	padding: 0.75rem 2.3125rem 6.9375rem 0.5rem;
 }
 
 .sp-nav__item {
@@ -975,6 +984,7 @@ body.is-open {
 
 .voice__btn {
 	margin-top: 2.5rem;
+	text-align: center;
 }
 
 .blog-card {
@@ -1040,11 +1050,6 @@ body.is-open {
 .blog-card__text,
 .blog-card__date {
 	color: #0D2936;
-}
-
-.view-more__arrow {
-	cursor: pointer;
-	text-align: center;
 }
 
 .button {
@@ -1257,6 +1262,10 @@ body.is-open {
 	right: 0;
 	top: 0;
 	z-index: 9999;
+}
+
+.header.is-open {
+	background: #408F95;
 }
 
 .header__inner {
@@ -1488,7 +1497,7 @@ html {
 	margin-top: 8.5rem;
 }
 
-.about__contents::after {
+.about::after {
 	background-image: url(../images/common/about-bg.png);
 	background-position: center;
 	background-repeat: no-repeat;
@@ -1497,8 +1506,8 @@ html {
 	content: "";
 	display: block;
 	height: 11.3125rem;
-	left: min(77vw, 91%);
 	position: absolute;
+	right: calc(50% - min(47%, 40rem));
 	width: 12.125rem;
 }
 
@@ -1786,17 +1795,6 @@ html {
 	top: 23.75rem;
 }
 
-.mv__title .text {
-	left: 53%;
-	top: 48%;
-	transform: translate(-53%, -48%);
-}
-
-.mv__title .subText {
-	top: 57%;
-	transform: translate(-50%, -57%);
-}
-
 .pc-nav {
 	display: block;
 }
@@ -1866,12 +1864,10 @@ html {
 
 .splide__arrows {
 	cursor: pointer;
-	display: flex;
-	gap: 5rem;
-	height: auto;
+	display: block;
 	position: absolute;
-	right: 11.25rem;
-	top: -3.9375rem;
+	right: min(13vw, 11.5rem);
+	top: -4rem;
 }
 
 .voice-layout {
