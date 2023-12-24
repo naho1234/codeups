@@ -39,7 +39,7 @@
 .pc-nav__wrap:hover::after {
   transform: scale(1, 1);
 }
-.pc-nav__wrap--en {
+.pc-nav__wrap-en {
   color: $color-white;
   font-size: rem(18);
   display: block;
@@ -47,13 +47,13 @@
   font-weight: $regular;
   line-height: 1;
 }
-.pc-nav__wrap--en::first-letter {
+.pc-nav__wrap-en::first-letter {
   text-transform: uppercase;
 }
-.pc-nav__item:nth-last-child(2) .pc-nav__wrap--en {
+.pc-nav__item:nth-last-child(2) .pc-nav__wrap-en {
   text-transform: uppercase;
 }
-.pc-nav__wrap--jp {
+.pc-nav__wrap-jp {
   margin-top: rem(4);
   font-family: $base-font-family;
   display: block;

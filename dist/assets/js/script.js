@@ -2,25 +2,25 @@
 
 window.addEventListener("load", function () {
   // ローディングアニメーションを表示
-  $(".loader").fadeIn(600, function () {
-    $(".text, .subText").fadeIn(300);
+  $(".js-loader").fadeIn(600, function () {
+    $(".main-title__text, .main-title__subText").fadeIn(300);
   });
 
   // ローディングアニメーションが終わったら
   setTimeout(function () {
-    $(".loader").fadeOut(400, function () {
+    $(".js-loader").fadeOut(400, function () {
       $(this).remove();
       // 1枚目の右側の画像を元の位置に移動
-      $(".mv-splide__slide:first .mv-img--right").animate({
+      $(".mv__splide-slide:first .mv__img--right").animate({
         top: "0px",
         right: "0px"
-      }, 800), $(".mv-splide__slide:first .mv-img--left").animate({
+      }, 800), $(".mv__splide-slide:first .mv__img--left").animate({
         top: "0px",
         left: "0px"
       }, 800);
 
       // Splideの初期化
-      var mvSplide = new Splide(".mv-splide", {
+      var mvSplide = new Splide(".js-mv-splide", {
         type: "fade",
         rewind: true,
         autoplay: true,
@@ -31,7 +31,7 @@ window.addEventListener("load", function () {
         pagination: false,
         drag: false
       });
-      var campaignSplide = new Splide(".campaign-splide", {
+      var campaignSplide = new Splide(".js-campaign-splide", {
         type: "loop",
         arrows: true,
         pagination: false,

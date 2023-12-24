@@ -32,7 +32,7 @@
     max-width: rem(1080);
   }
 }
-.about__img--left {
+.about__img-left {
   max-width: 37%;
   width: 100%;
   aspect-ratio: 128/194;
@@ -47,7 +47,7 @@
   }
 }
 
-.about__img--right {
+.about__img-right {
   max-width: 82%;
   width: 100%;
   aspect-ratio: 281/186;
@@ -58,8 +58,8 @@
     aspect-ratio: 880/581;
   }
 }
-.about__img--left img,
-.about__img--right img {
+.about__img-left img,
+.about__img-right img {
   width: 100%;
   height: 100%;
   display: block;
@@ -79,7 +79,7 @@
     z-index: 2;
   }
 }
-.about__title {
+.about__head {
   font-family: $second-font-family;
   color: $color-blue;
   font-size: rem(40);
@@ -91,7 +91,7 @@
     line-height: 1.25;
   }
 }
-.about__title span {
+.about__head span {
   text-transform: uppercase;
 }
 .about__wrap {
