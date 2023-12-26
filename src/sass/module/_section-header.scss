@@ -2,7 +2,7 @@
 .section-header {
   text-align: center;
 }
-.section-header__subTitle {
+.section-header__sub-title {
   font-family: $second-font-family;
   font-weight: $regular;
   display: block;
@@ -14,23 +14,23 @@
     line-height: 1.1;
   }
 }
-.section-header__subTitle::first-letter {
+.section-header__sub-title::first-letter {
   text-transform: uppercase;
   color: $color-blue;
 }
-.section-header__subTitle--white::first-letter {
+.section-header__sub-title--white::first-letter {
   color: $color-blue;
   @include mq("md") {
     color: #ddf0f1;
   }
 }
-.section-header__subTitle--white {
+.section-header__sub-title--white {
   color: $color-green;
   @include mq("md") {
     color: $color-white;
   }
 }
-.section-header__subTitle--big {
+.section-header__sub-title--big {
   font-size: rem(80);
   line-height: 0.8;
   margin-top: rem(40);
