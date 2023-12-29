@@ -1,12 +1,6 @@
 @use "global" as *;
-.campaign{
-	overflow: hidden;
-}
-.campaign-layout {
-  margin-top: rem(40);
-  @include mq("md") {
-    margin-top: rem(120);
-  }
+.campaign {
+  overflow: hidden;
 }
 .campaign__splide {
   position: relative;
@@ -79,7 +73,7 @@
   font-size: rem(16);
   font-weight: $medium;
   padding-bottom: rem(8);
-	word-break: break-word;//英語でもはみ出さないようにする記述
+  word-break: break-word; //英語でもはみ出さないようにする記述
   @include mq("md") {
     margin-top: rem(4);
   }
@@ -136,7 +130,7 @@
 .campaign__btn {
   margin-top: rem(30);
   padding-bottom: rem(6);
-	text-align: center;
+  text-align: center;
   @include mq("md") {
     margin-top: rem(70);
   }

@@ -1,10 +1,4 @@
 @use "global" as *;
-.voice-layout {
-	margin-top: rem(83);
-  @include mq("md") {
-		margin-top: rem(140);
-  }
-}
 .voice__items::before,
 .voice__items::after {
   @include mq("md") {
@@ -42,7 +36,7 @@
 }
 .voice__btn {
   margin-top: rem(40);
-	text-align: center;
+  text-align: center;
   @include mq("md") {
     margin-top: rem(80);
   }

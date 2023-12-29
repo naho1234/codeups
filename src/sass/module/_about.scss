@@ -2,12 +2,6 @@
 .about {
   position: relative;
 }
-.about-layout {
-  margin-top: rem(75);
-  @include mq("md") {
-    margin-top: rem(136);
-  }
-}
 .about::after {
   @include mq("md") {
     content: "";
@@ -25,7 +19,7 @@
 }
 .about__contents {
   margin: rem(53) auto 0;
-	position: relative;
+  position: relative;
   width: 100%;
   @include mq("md") {
     margin-top: rem(120);

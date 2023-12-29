@@ -9,7 +9,7 @@
   @include mq("md") {
     position: absolute;
     top: rem(-64);
-    right: min(13vw,rem(184));
+    right: min(13vw, rem(184));
     cursor: pointer;
     display: block;
   }

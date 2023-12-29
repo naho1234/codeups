@@ -6,12 +6,6 @@
     padding: rem(100) 0 rem(103);
   }
 }
-.price-layout {
-  margin-top: rem(80);
-  @include mq("md") {
-    margin-top: rem(142);
-  }
-}
 .price__wrap {
   margin: rem(28) auto 0;
   width: 100%;
@@ -106,7 +100,7 @@
 }
 .price__btn {
   margin-top: rem(40);
-	text-align: center;
+  text-align: center;
   @include mq("md") {
     margin-top: rem(80);
   }

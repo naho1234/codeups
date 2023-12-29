@@ -3,7 +3,7 @@
 window.addEventListener("load", function () {
   // ローディングアニメーションを表示
   $(".js-loader").fadeIn(600, function () {
-    $(".main-title__text, .title__sub-text").fadeIn(300);
+    $(".main-title__text, .main-title__sub-text").fadeIn(300);
   });
 
   // ローディングアニメーションが終わったら

@@ -23,13 +23,13 @@
   color: $color-blue;
   font-weight: $regular;
   letter-spacing: 0.54em;
-	text-indent: 0.54em;//letter-spacingを使用していると中央寄せにならないのでこれを使用
+  text-indent: 0.54em; //letter-spacingを使用していると中央寄せにならないのでこれを使用
   @include mq("md") {
-		font-size: rem(80);
-		line-height: 1.25;
+    font-size: rem(80);
+    line-height: 1.25;
   }
 }
-.title__sub-text {
+.main-title__sub-text {
   font-size: rem(20);
   font-family: $second-font-family;
   display: none;

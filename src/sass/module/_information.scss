@@ -6,12 +6,6 @@
     padding: rem(100) 0 rem(98);
   }
 }
-.information-layout {
-  margin-top: rem(70);
-  @include mq("md") {
-    margin-top: rem(142);
-  }
-}
 .information__contents {
   margin: rem(28) auto 0;
   @include mq("md") {
@@ -67,5 +61,5 @@
 }
 .information__btn {
   margin-top: rem(41);
-	text-align: center;
+  text-align: center;
 }
